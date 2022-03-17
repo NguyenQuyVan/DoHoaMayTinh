@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+Trình duyệt của bạn không sử dụng canvas
+</canvas>
+<script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(50,50,45,3,0.5*Math.PI);
+    ctx.stroke();
+    </script> 
+</body>
+</html>

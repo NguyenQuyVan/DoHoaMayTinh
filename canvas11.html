@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="myCanvas" width="1000" height="600" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+//ctx.shadowBlur = 50;
+ctx.fillStyle = "red";
+//ctx.shadowColor = "black";
+ctx.fillRect(100, 100, 150, 150);
+ctx.stroke();
+
+ctx.globalCompositeOperation = 'destination-over' ;
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.moveTo(101,101);
+ctx.lineTo(121,81);
+ctx.lineTo(271,81);
+ctx.lineTo(251,101);
+ctx.beginPath
+ctx.moveTo(251,101);
+ctx.lineTo(271,81);
+ctx.lineTo(271,231);
+ctx.lineTo(251,251);
+ctx.closePath();
+ctx.stroke();
+
+ctx.lineWidth = 2;
+ctx.strokeStyle = '#666666' ;
+ctx.stroke();
+
+ctx.fillStyle = "#FFCCEF";
+ctx.fill();
+</script>
+
+</body>
+</html>
